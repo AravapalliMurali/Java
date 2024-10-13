@@ -1,4 +1,4 @@
-import opps.inhertance.Cals; // importing packages from  
+import opps.inhertance.*; // importing packages from  
 
 public class App {
     public static void main(String[] args) throws Exception {
