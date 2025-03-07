@@ -4,7 +4,7 @@ class Human {
     public String name;
 
     // default constructor
-    public Human() {
+    public Human() { // default constructor
         this.age = 26;
         this.name = "murali";
         System.out.println("Inside constructor ");

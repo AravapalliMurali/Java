@@ -13,12 +13,20 @@ public class arrays {
         Innerarrays stud = new Innerarrays();
         stud.name = "murali";
         stud.rollnum = 78;
+        Innerarrays stud1 = new Innerarrays();
+        stud1.name = "krishna";
+        stud1.rollnum = 18;
         Innerarrays arr1[] = new Innerarrays[3];
         arr1[0] = stud;
+        arr1[1] = stud1;
 
-        for(Innerarrays stu : arr1){
-            System.out.println(stu.name + " : " + stu.rollnum);
+        for(Innerarrays stu : arr1){ // working with class 
+            System.out.println(stu.name + " : " + stu.rollnum); // print the stu object 
         }
+
+        // for(int n : arrayName){
+        //     System.out.println(n);
+        // } normal for loop 
 
         
 

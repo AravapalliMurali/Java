@@ -7,6 +7,7 @@ public class Demo {
         d1.setDetails("murali", 26);
 
         System.out.println(d1.getAge() + " : " + d1.getName());
+        // with the help of method we can fetch the values from private keyword 
         System.out.println(d1.age);
     }
 }

@@ -5,7 +5,7 @@ public class demo {
         class Mobile {
             int price;
             String brand;
-            static String name;
+            static String name; // instance variable 
 
             static{
                 name = "smartPhone"; // static block -> it only run the one time when we load the class
@@ -27,7 +27,7 @@ public class demo {
         s1.brand = "apple";
         s1.price = 50_000;
         //s1.name = "13pro max";
-        Mobile.name = "13promax";
+        Mobile.name = "13promax"; // we can call with class also 
 
         s2.brand = "apple";
         s2.price = 50_000;
@@ -40,7 +40,7 @@ public class demo {
         s1.show();
         s2.show();
 
-        Mobile.show1(s1);
+        Mobile.show1(s1);// indirectly we can you use instance vaiables in staic method by passing object reference 
 
     }
 }

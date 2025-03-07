@@ -6,6 +6,9 @@ public class Anonymous {
             public void show(){
                 System.out.println( " In anonymous class");
             }
+            public void show1(){
+                System.out.println(" show in anonymous class");
+            }
         };
         obj.show();
         
@@ -24,4 +27,12 @@ class InnerAnonymous {
         System.out.println(" in A class");
     }
     
+}
+
+//abstract class
+abstract package classes;
+
+class InnerAnonymous_1 {
+    public abstract show();
+    public abstract shown();
 }

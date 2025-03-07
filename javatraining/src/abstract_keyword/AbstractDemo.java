@@ -4,7 +4,7 @@
  */
 public class AbstractDemo {
     public static void main(String[] args) {
-        InnerAbstractDemo_1 obj = new InnerAbstractDemo_1();
+        InnerAbstractDemo obj = new InnerAbstractDemo_1(); // taking the referance of abstract class and creatiung the child object 
         obj.drive();
         obj.playMusic();
         
