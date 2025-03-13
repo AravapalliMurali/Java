@@ -16,15 +16,31 @@ public class Demo {
         String url = "jdbc:msql://localhost:3306/worker";
         String username = "root";
         String password = "Murali@9088";
-        String quary = "select DepartmentName from Department where DepartmentID = 3";
+        //String quary = "select DepartmentName from Department where DepartmentID = 3";
+        //String quary = "select * from Department";
+        int userid = 2;
+        String name = "krishna";
+        String quary = "insert into student values("+ userid + ", '" + username + "')";
 
         Class.forName("com.msql.jdbc.Driver"); // please watch the class forname
         try (var connect = DriverManager.getConnection(url, username, password); Statement st = connect.createStatement()) {
-            ResultSet rs = st.executeQuery(quary);
+            //ResultSet rs = st.executeQuery(quary); // 
+            int rs = st.executeUpdate(quary);
             
-            rs.next(); // for next row in table
-            String name = rs.getString("DepartmentName");
-            System.out.println(name);
+            System.out.println(rs);
+        
+
+            
+            // rs.next(); // for next row in table
+            // String name = rs.getString("DepartmentName");
+            // System.out.println(name);
+
+            // String userdata ="";
+            // while(rs.next()){
+            //     userdata = rs.getInt(1) + ":" + rs.getString(2);
+            //     System.out.println(userdata);
+            // }
+
             // here closing the connection
 
         }catch(Exception e){
